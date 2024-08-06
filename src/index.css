@@ -7,5 +7,35 @@ body {
     height: 100dvh;
     background: #141E30;
     background: linear-gradient(to bottom, #243B55, #141E30) no-repeat;
+}
 
+.links{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #cbd5e1;
+    border-radius: 8px;
+    padding: 12px;
+    transition: .2s all ease-in-out;
+    cursor:pointer
+}
+
+.links:hover{
+    background: #ffffff;
+    transform: scale(1.02);
+}
+
+.linkSocial{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #cbd5e1;
+    transition: .2s all ease-in-out;
+}
+
+.linkSocial:hover{
+    color: #ffffff;
+    transform: scale(1.02);
 }

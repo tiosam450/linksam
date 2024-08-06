@@ -15,16 +15,16 @@ export default function Home() {
                 </div>
                 <div className='w-full flex items-center flex-col pb-8'>
                     <div className='w-full flex items-center flex-col gap-4'>
-                        <a className='w-full flex flex-col py-3 rounded-lg bg-slate-300 text-center font-medium text-[1.2rem] hover:scale-[1.02] transition duration-[.2s] ease-in-out hover:bg-slate-50'>Link1</a>
-                        <a className='w-full flex flex-col py-3 rounded-lg bg-slate-300 text-center font-medium text-[1.2rem] hover:scale-[1.02] transition duration-[.2s] ease-in-out hover:bg-slate-50'>Link1</a>
-                        <a className='w-full flex flex-col py-3 rounded-lg bg-slate-300 text-center font-medium text-[1.2rem] hover:scale-[1.02] transition duration-[.2s] ease-in-out hover:bg-slate-50'>Link1</a>
-                        <a className='w-full flex flex-col py-3 rounded-lg bg-slate-300 text-center font-medium text-[1.2rem] hover:scale-[1.02] transition duration-[.2s] ease-in-out hover:bg-slate-50'>Link1</a>
+                        <a className='links'>Link1</a>
+                        <a className='links'>Link2</a>
+                        <a className='links'>Link3</a>
+                        <a className='links'>Link4</a>
                     </div>
                 </div>
                 <div className='flex items-center gap-4' >
-                    <a href="" className='text-slate-300 text-[2rem] hover:text-slate-50 hover:scale-[1.02] transition duration-[.2s] ease-in-out'><FaInstagram /></a>
-                    <a href="" className='text-slate-300 text-[2rem] hover:text-slate-50 hover:scale-[1.02] transition duration-[.2s] ease-in-out'><BiLogoFacebook /></a>
-                    <a href="" className='text-slate-300 text-[2rem] hover:text-slate-50 hover:scale-[1.02] transition duration-[.2s] ease-in-out'><FaLinkedinIn /></a>
+                    <a href="" className='linkSocial'><FaInstagram /></a>
+                    <a href="" className='linkSocial'><BiLogoFacebook /></a>
+                    <a href="" className='linkSocial'><FaLinkedinIn /></a>
                     
                 </div>
             </div>
