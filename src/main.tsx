@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import rotas from './rotas.tsx'
+import rotas from './rotas/rotas.tsx'
 import './index.css'
 import { RouterProvider } from 'react-router-dom'
 

@@ -1,11 +1,11 @@
-import React, { HtmlHTMLAttributes, InputHTMLAttributes } from 'react'
+import { InputHTMLAttributes } from 'react'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement>{}
 
-const input = (props: InputProps) => {
+const Input = (props: InputProps) => {
   return (
-    <input {...props} className=''/>
+    <input {...props} className='p-2 border-none rounded-md text-[1.1rem]'/>
   )
 }
 
-export default input
+export default Input
