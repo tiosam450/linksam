@@ -34,7 +34,7 @@ export default function Private({ children }: Privateprops): any {
     }, [])
 
     if(loading){
-        return <div>carregando</div>
+        return <div className="w-full h-screen text-white grid place-items-center">carregando...</div>
     }
 
     if(!logado){

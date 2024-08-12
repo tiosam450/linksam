@@ -14,7 +14,6 @@ export default function Login(){
         e.preventDefault()
         if(email && senha){
             signInWithEmailAndPassword(auth, email, senha).then(()=>{
-                alert('Login')
                 setEmail('')
                 setSenha('')
                 navigate('/admin', {replace: true})
