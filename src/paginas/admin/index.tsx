@@ -6,6 +6,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { addDoc, collection, deleteDoc, doc, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "../../services/services";
+import { toast } from "react-toastify";
 
 interface listaProps {
     id: string
@@ -63,7 +64,7 @@ export default function Admin() {
             setNomeLink('')
             setEndLink('')
         }).catch((erro) => {
-            alert('Ops! Algo deu errado')
+            toast.error('Ops! Algo deu errado')
             console.log(erro)
         })
     }
