@@ -1,9 +1,11 @@
+import { signOut } from "firebase/auth"
 import { Link } from "react-router-dom"
+import { auth } from "../services/services"
 
 export default function Header() {
 
-    function logout() {
-
+    async function logout() {
+       await signOut(auth)
     }
 
     return (

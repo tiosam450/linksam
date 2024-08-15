@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Input from "../../componentes/Input";
 import { FormEvent } from "react";
-import { db, auth } from "../../services/services";
+import { auth } from "../../services/services";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function Login(){
     const [email, setEmail] = useState('');
@@ -16,6 +17,7 @@ export default function Login(){
             signInWithEmailAndPassword(auth, email, senha).then(()=>{
                 setEmail('')
                 setSenha('')
+                toast.success('Bem-vindo ao sistema!')
                 navigate('/admin', {replace: true})
             }).catch((erro)=>{
                 console.log(erro.code)
