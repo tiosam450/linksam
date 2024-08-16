@@ -8,4 +8,4 @@ const Input = (props: InputProps) => {
   )
 }
 
-export default Input
+export default nput
