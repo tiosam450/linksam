@@ -13,7 +13,6 @@ export default function Header() {
             <div className="w-full max-w-[90%] flex justify-between text-white ">
                 <div className="flex gap-4">
                     <Link to={'/'}>Home</Link>
-                    <Link to={'/links'}>Links</Link>
                 </div>
                 <h3 onClick={logout} className="cursor-pointer">Sair</h3>
             </div>

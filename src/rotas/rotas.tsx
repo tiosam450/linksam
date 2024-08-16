@@ -9,7 +9,7 @@ const rotas = createBrowserRouter([{
   children:[
     {
       path:'/',
-      element:<Private><Home/></Private>
+      element:<Home/>
     },
     {
       path:'/admin',

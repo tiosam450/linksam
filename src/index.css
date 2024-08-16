@@ -14,15 +14,15 @@ body {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
-    background: #cbd5e1;
     border-radius: 8px;
     padding: 12px;
     transition: .2s all ease-in-out;
-    cursor:pointer
+    cursor:pointer;
+    opacity: .85;
 }
 
 .links:hover{
-    background: #ffffff;
+    opacity: 1;
     transform: scale(1.02);
 }
 

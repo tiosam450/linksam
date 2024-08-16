@@ -19,9 +19,9 @@ interface listaProps {
 
 export default function Admin() {
     const [nomeLink, setNomeLink] = useState('')
-    const [endLink, setEndLink] = useState('')
-    const [corLink, setCorLink] = useState('#ffffff')
-    const [corBg, setCorBg] = useState('#3b81f5')
+    const [endLink, setEndLink] = useState('https://')
+    const [corLink, setCorLink] = useState('#141E30')
+    const [corBg, setCorBg] = useState('#cbd5e1')
     const [botoes, setBotoes] = useState<listaProps[]>([])
     const [instagram, setInstagram] = useState('')
     const [facebook, setFacebook] = useState('')
@@ -78,7 +78,7 @@ export default function Admin() {
                 data: new Date()
             }).then(() => {
                 setNomeLink('')
-                setEndLink('')
+                setEndLink('https://')
                 cadastraSocial(e)
                 window.scrollTo({
                     top: document.body.scrollHeight,
@@ -136,7 +136,7 @@ export default function Admin() {
 
                     <div className="flex flex-col gap-2 mb-[30px]">
                         <label className="text-white">Link do botão</label>
-                        <Input value={endLink} placeholder="Cole aqui ou digite o link do botão" onChange={e => setEndLink(e.target.value)} />
+                        <Input value={endLink} placeholder="https://linkdobotao" onChange={e => setEndLink(e.target.value)} />
                     </div>
 
                     <div className="flex items-center gap-4 mb-[10px]">
@@ -163,12 +163,12 @@ export default function Admin() {
                     <h2 className="text-white text-center font-bold text-[1.2rem] ">Redes sociais</h2>
 
                     <div className="flex flex-col gap-2 mb-[30px]">
-                        <label className="text-white"> Instagram</label>
+                        <label className="text-white">Whatsapp</label>
                         <Input value={instagram} placeholder="Cole ou digite seu link" onChange={e => setInstagram(e.target.value)} />
                     </div>
 
                     <div className="flex flex-col gap-2 mb-[30px] ">
-                        <label className="text-white">Facebook</label>
+                        <label className="text-white">Behance</label>
                         <Input value={facebook} placeholder="Cole ou digite seu link" onChange={e => setFacebook(e.target.value)} />
                     </div>
 
@@ -191,7 +191,7 @@ export default function Admin() {
                             <h2 className="text-white text-center font-bold text-[1.2rem] ">Meus links</h2>
                             {botoes.map((item) => (
                                 <div key={item.id} className="w-full flex items-center justify-between py-[8px] mx-auto gap-4 rounded-md px-4" style={{ background: item.corBotao, color: item.corLink }}>
-                                    <Link to={item.url} target="blank" className="text-white" >{item.nome}</Link>
+                                    <Link to={item.url} target="_blank" >{item.nome}</Link>
                                     <div className="flex items-center gap-4">
                                         <FaRegTrashAlt className="cursor-pointer" onClick={() => deleta(item.id)} />
                                     </div>
